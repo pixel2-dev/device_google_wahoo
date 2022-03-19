@@ -64,6 +64,8 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/google/wahoo
 TARGET_NEEDS_DTBOIMAGE := true
 
+PRODUCT_VENDOR_KERNEL_HEADERS := $(LOCAL_PATH)/kernel-headers
+
 $(call inherit-product, device/google/wahoo/utils.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
