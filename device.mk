@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Remove Apps
+PRODUCT_PACKAGES += \
+    AppRemover_wahoo
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
