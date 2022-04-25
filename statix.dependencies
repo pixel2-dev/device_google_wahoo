@@ -1,0 +1,25 @@
+[
+  { "repository":
+    "EnesSastim/packages_apps_RepainterServicePriv",
+    "target_path": "packages/apps/RepainterServicePriv",
+    "remote": "github",
+    "revision": "main"
+  },
+  { "repository":
+    "LineageOS/android_packages_apps_ElmyraService",
+    "target_path": "packages/apps/ElmyraService",
+    "remote": "github",
+    "revision": "lineage-19.1"
+  },
+  { "repository":
+    "LineageOS/android_external_json-c",
+    "target_path": "external/json-c",
+    "remote": "gitlab",
+    "revision": "lineage-19.1"
+  },
+  { "repository": 
+    "StatiXOS/android_vendor_google_pixelparts", 
+    "target_path": "vendor/google/pixelparts", 
+    "remote": "gitlab"
+  }
+]

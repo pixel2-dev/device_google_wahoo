@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Remove Apps
+PRODUCT_PACKAGES += \
+    AppRemover_wahoo
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -72,6 +76,7 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_SHIPPING_API_LEVEL := 26
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.recovery.hardware.rc:recovery/root/init.recovery.$(PRODUCT_HARDWARE).rc \
@@ -809,6 +814,22 @@ PRODUCT_PACKAGES += \
 
 # Setting vendor SPL
 VENDOR_SECURITY_PATCH := "2020-10-05"
+
+# Parts
+PRODUCT_PACKAGES += \
+    GoogleParts
+
+# Elmyra
+PRODUCT_PACKAGES += \
+    ElmyraService
+
+# Overlay
+PRODUCT_PACKAGES += \
+    PixelFrameworksOverlay
+
+# RepainterService
+PRODUCT_PACKAGES += \
+    RepainterServicePriv
 
 # Task profiles
 PRODUCT_COPY_FILES += \
